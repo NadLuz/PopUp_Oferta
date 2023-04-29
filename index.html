@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Leave Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- adicionar uma nova classe chamada "container" -->
+<div class="container">
+    
+</div>
+<div id="popBox">
+    <img src="images/makeup.jpg" alt="recipientes de maquiagem" width="100%">
+    <div class="oferta">
+        <h2>Ganhe 20% off</h2>
+        <small>comprando produtos da linha Gold.</small>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum repellat doloribus, molestiae quasi quisquam labore.</p>
+        <form>
+            <input type="email" placeholder="usuario@email.com">
+            <button type="submit">Inscreva-se</button>
+        </form>
+    </div>
+    <img src="images/close.png" class="closing" onclick="closeBox()">
+</div>
+
+<!-- parte que executa a propaganda -->
+<script>
+
+let popBox = document.getElementById("popBox");
+
+document.onmouseleave = function(){
+    popBox.style.display = "block";
+}
+
+function closeBox(){
+    popBox.style.display = "none";
+}
+</script>
+
+</body>
+</html>
